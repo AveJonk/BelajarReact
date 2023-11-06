@@ -16,7 +16,15 @@
       function Header(){
         return (<h1>Always hello world</h1>);
       }
-      root.render(<Header />);
+      
+      function HomePage(){
+        return (
+          <>
+            <Header />
+          </>
+        )
+      }
+      root.render(<HomePage />);
   </script>  
 </body>
 </html>
