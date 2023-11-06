@@ -18,10 +18,17 @@
       }
 
       function HomePage(){
+        const siswa = ['Aveline', 'Jonk', 'Avetetsuya']
         return (
           <>
-          <Header />
-          <Header nama = "siapa?"/>
+          <Header nama="Aveline" />
+            <ul>
+              {
+                siswa.map((siswa) => (
+                 <li>{siswa}</li>
+                 ))
+              }
+            </ul>
           </>
         )
       }
